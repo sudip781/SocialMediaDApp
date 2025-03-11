@@ -47,7 +47,7 @@ const MainFiendSliderTwo = ({ AppUsers, FOLLOW_USER }) => {
               <div class="clearfix"></div>
               <h4 class="fw-700 font-xssss mt-3 mb-1">Studio Express</h4>
               <p class="fw-500 font-xsssss text-grey-500 mt-0 mb-3">
-                @macale343
+                @crazy_jay789
               </p>
               <a
                 href="#"

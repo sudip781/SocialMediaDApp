@@ -1,7 +1,7 @@
 [
   {
     "productId": 1,
-    "name": "Daulat Tech",
+    "name": "Robert Smith",
     "video": "ProductAds/video-5.mp4",
     "brand": "ProductAds/logo-1.jpg",
     "Link": "#"
@@ -16,7 +16,7 @@
   {
     "productId": 3,
     "name": "Dimand Heart",
-    "video": "ProductAds/video-3.mp4",
+    "video": "ProductAds/video-6.mp4",
     "brand": "ProductAds/logo-3.jpg",
     "Link": "#"
   },

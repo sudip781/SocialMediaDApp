@@ -15,7 +15,7 @@ const MainFourPost = () => {
           />
         </figure>
         <h4 class="fw-700 text-grey-900 font-xssss mt-1">
-          Anthony Daugloi
+          Jaydeep Biswas
           <span class="d-block font-xssss fw-500 mt-1 lh-3 text-grey-500">
             2 hour ago
           </span>
@@ -35,9 +35,7 @@ const MainFourPost = () => {
 
       <div class="card-body p-0 me-lg-5">
         <p class="fw-500 text-grey-500 lh-26 font-xssss w-100">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla
-          dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus
-          mollis pharetra. Proin blandit ac massa sed rhoncus
+          Ki bolbo, kichu bolar nei.
           <a href="#" class="fw-600 text-primary ms-2">
             See more
           </a>
@@ -123,7 +121,7 @@ const MainFourPost = () => {
           class="d-flex align-items-center fw-600 text-grey-900 text-dark lh-26 font-xssss"
         >
           <i class="feather-message-circle text-dark text-grey-900 btn-round-sm font-lg"></i>
-          <span class="d-none-xss">22 Comment</span>
+          <span class="d-none-xss">17 Comment</span>
         </a>
         <a
           href="#"

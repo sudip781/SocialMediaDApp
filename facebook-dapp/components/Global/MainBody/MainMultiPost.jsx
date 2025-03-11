@@ -39,9 +39,7 @@ const MainMultiPost = () => {
       </div> */}
       <div class="card-body p-0 me-lg-5">
         <p class="fw-500 text-grey-500 lh-26 font-xssss w-100">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla
-          dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus
-          mollis pharetra. Proin blandit ac massa sed rhoncus
+          Ki korbo...
           <a href="#" class="fw-600 text-primary ms-2">
             See more
           </a>

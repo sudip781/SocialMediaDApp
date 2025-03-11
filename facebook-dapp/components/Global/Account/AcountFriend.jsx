@@ -47,14 +47,14 @@ const AccountFriend = () => {
                         />
                       </figure>
                       <div class="clearfix"></div>
-                      <h4 class="fw-700 font-xss mt-3 mb-0">Aliqa Macale</h4>
+                      <h4 class="fw-700 font-xss mt-3 mb-0">Jaydeep Biswas</h4>
                       <p class="fw-500 font-xssss text-grey-500 mt-0 mb-3">
-                        support@gmail.com
+                        biswasjaydeep51@gmail.com
                       </p>
                       <ul class="d-flex align-items-center justify-content-center mt-1">
                         <li class="m-2">
                           <h4 class="fw-700 font-sm">
-                            500+
+                            230+
                             <span class="font-xsssss fw-500 mt-1 text-grey-500 d-block">
                               Connections
                             </span>
@@ -62,7 +62,7 @@ const AccountFriend = () => {
                         </li>
                         <li class="m-2">
                           <h4 class="fw-700 font-sm">
-                            88.7 k
+                            231
                             <span class="font-xsssss fw-500 mt-1 text-grey-500 d-block">
                               Follower
                             </span>

@@ -1,14 +1,14 @@
 [
   {
     "productId": 1,
-    "name": "Denail Lit",
+    "name": "Cup Set",
     "brand": "ProductAds/product-1.png",
-    "Link": "#"
+    "Link": "https://norogallery.my.canva.site/"
   },
   {
     "productId": 2,
-    "name": "Natural",
+    "name": "Acne Serum",
     "brand": "ProductAds/product-2.png",
-    "Link": "#"
+    "Link": "https://discoverpilgrim.com/products/salicylic-glycolic-acid-anti-acne-serum?utm_source=google&utm_medium=cpc&utm_campaign=Performancemax_Allproducts_30/08&gad_source=1"
   }
 ]

@@ -1,34 +1,34 @@
 [
   {
     "productId": 1,
-    "title": "Digital Tech",
-    "month": "JAN",
-    "day": "23",
-    "discription": "41 madison ave, floor 24 new work, NY 10010",
-    "Link": "#"
+    "title": "EDU Chain x HackQuest Regional Hackathon - Lagos, Nigeria",
+    "month": "MAR",
+    "day": "27",
+    "discription": "On March 27th, HackQuest will collaborate with EDU Chain to host the Lagos Build Station, an offline co-building event tailored for blockchain developers, educators, and EduFi innovators. Participants will dive into hands-on workshops and collaborative sessions focused on leveraging the EDU Chain tech stack to create cutting-edge on-chain education solutions. Innovative projects developed here will gain the opportunity to advance within the EDU Chain Hackathon ecosystem.",
+    "Link": "https://www.hackquest.io/events/edu-chain-x-hackquest-regional-hackathon-lagos-nigeria"
   },
   {
     "productId": 2,
-    "title": "Bio Tech",
-    "month": "FAB",
-    "day": "24",
-    "discription": "41 madison ave, floor 24 new work, NY 10010",
-    "Link": "#"
+    "title": "Smart Bengal Hackathon 2025",
+    "month": "APR",
+    "day": "22",
+    "discription": "Smart Bengal Hackathon is a statewide initiative to provide engineering and school students to solve some of the common problems we face daily, thus inculcating a culture of product innovation and a mindset of real-time problem-solving.",
+    "Link": "https://www.hackquest.io/hackathons/Smart-Bengal-Hackathon-2025"
   },
   {
     "productId": 3,
-    "title": "Blockchain Tech",
+    "title": "ETHSF Hackathon 2025",
     "month": "MAR",
-    "day": "25",
-    "discription": "41 madison ave, floor 24 new work, NY 10010",
-    "Link": "#"
+    "day": "10-15",
+    "discription": "ETHSF is a week-long event that brings together developers, companies, and enthusiasts to build decentralized applications using Ethereum. The event will feature a hackathon, workshops, and talks from leading blockchain experts.",
+    "Link": "https://ethsf2025.devfolio.co/"
   },
   {
     "productId": 4,
-    "title": "Digital Tech",
-    "month": "JAN",
-    "day": "23",
-    "discription": "41 madison ave, floor 24 new work, NY 10010",
-    "Link": "#"
+    "title": "Hack4Bengal 4.0",
+    "month": "MAY",
+    "day": "20-22",
+    "discription": "Hack4Bengal is a hackathon focused on encouraging innovation and creativity in the technology space, specifically in the region of West Bengal, India. The event is open to all students, professionals, and enthusiasts who are passionate about technology and want to make a difference.",
+    "Link": "https://www.hackquest.io/hackathons/Hack4Bengal-4.0"
   }
 ]

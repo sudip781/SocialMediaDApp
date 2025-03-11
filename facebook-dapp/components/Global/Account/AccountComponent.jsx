@@ -30,10 +30,10 @@ const AccountComponent = () => {
                       />
                     </figure>
                     <h2 class="fw-700 font-sm text-grey-900 mt-3">
-                      Surfiya Zakir
+                      Bishal
                     </h2>
                     <h4 class="text-grey-500 fw-500 mb-3 font-xsss mb-4">
-                      Brooklyn
+                      Saha
                     </h4>
                   </div>
                 </div>

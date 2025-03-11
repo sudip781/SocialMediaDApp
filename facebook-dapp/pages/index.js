@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-//INTERNAL IMPORT
+//INTERNAL IMPORTS
 import {
   Header,
   Footer,
@@ -34,7 +34,8 @@ import {
 } from "../components/index";
 import { GroupChat } from "../components/Global/RightChat/index";
 import { CreatePost } from "../components/Global/MainBody/index";
-///INTERNAL IMPORT
+
+///INTERNAL IMPORTS
 import { SOCAIL_MEDIA_Context } from "../context/context";
 
 const index = () => {
@@ -84,10 +85,10 @@ const index = () => {
   const [postType, setPostType] = useState();
   const [openSideChat, setOpenSideChat] = useState(false);
   const [openTheme, setOpenTheme] = useState(false);
-  const [backgroundTheme, setBackgroundTheme] = useState(false); //menu-current-color
-  const [menuPostion, setMenuPostion] = useState(false); //menu-active
-  const [theme, setTheme] = useState(false); //theme-dark
-  const [navbarActive, setNavbarActive] = useState(false); //nav-active
+  const [backgroundTheme, setBackgroundTheme] = useState(false); //Menu-current-color
+  const [menuPostion, setMenuPostion] = useState(false); //Menu-active
+  const [theme, setTheme] = useState(false); //Theme-dark
+  const [navbarActive, setNavbarActive] = useState(false); //Nav-active
 
   //LOCAL STATE
   const [commentPostID, setCommentPostID] = useState();
