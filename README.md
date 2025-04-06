@@ -89,7 +89,7 @@ The project adopts a modern full-stack architecture:
 
 ## 🤝 Contributing
 
-Contributions are welcome via Issues and Pull Requests
+Contributions are welcome via Issues and Pull Requests!
 
 ## 📜 License
 
