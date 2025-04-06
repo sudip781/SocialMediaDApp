@@ -96,10 +96,10 @@ const networks = {
   },
   educhain: {
     chainId: `0x${Number(656476).toString(16)}`,
-    chainName: "Edu Chain",
+    chainName: "EDU Chain Testnet",
     nativeCurrency: {
-      name: "ETH",
-      symbol: "ETH",
+      name: "EDU",
+      symbol: "EDU",
       decimals: 18,
     },
     rpcUrls: ["https://rpc.open-campus-codex.gelato.digital"],

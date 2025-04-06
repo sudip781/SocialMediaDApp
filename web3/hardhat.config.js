@@ -3,6 +3,7 @@ require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 
 const HOLESKY_RPC_URL = process.env.HOLESKY_RPC_URL;
+// const EDUCHAIN_RPC_URL = process.env.EDUCHAIN_RPC_URL;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 
 /** @type import('hardhat/config').HardhatUserConfig */
@@ -20,7 +21,6 @@ module.exports = {
     hardhat: {
       chainId: 1337,
     },
-
     holesky: {
       url: `${HOLESKY_RPC_URL}`,
       accounts: [PRIVATE_KEY],
