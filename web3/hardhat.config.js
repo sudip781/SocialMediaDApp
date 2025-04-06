@@ -26,6 +26,11 @@ module.exports = {
       accounts: [PRIVATE_KEY],
       chainId: 17000,
     },
+    educhain: {
+      url: `${EDUCHAIN_RPC_URL}`,
+      accounts: [PRIVATE_KEY],
+      chainId: 656476,
+    }, 
   },
 
   paths: {

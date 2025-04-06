@@ -94,6 +94,17 @@ const networks = {
     rpcUrls: ["http://127.0.0.1:8545/"],
     blockExplorerUrls: ["https://bscscan.com"],
   },
+  educhain: {
+    chainId: `0x${Number(656476).toString(16)}`,
+    chainName: "Edu Chain",
+    nativeCurrency: {
+      name: "ETH",
+      symbol: "ETH",
+      decimals: 18,
+    },
+    rpcUrls: ["https://rpc.open-campus-codex.gelato.digital"],
+    blockExplorerUrls: ["https://opencampus-codex.blockscout.com/"],
+  },
 };
 
 const changeNetwork = async ({ networkName }) => {

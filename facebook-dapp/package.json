@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
     "clear": "rm -rf node_modules package-lock.json .next"
@@ -20,5 +20,9 @@
     "react-icons": "^4.11.0",
     "react-swipeable": "^7.0.2",
     "web3modal": "^1.9.5"
+  },
+  "devDependencies": {
+    "eslint": "^9.24.0",
+    "eslint-config-next": "15.2.4"
   }
 }
