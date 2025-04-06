@@ -57,11 +57,43 @@ The project adopts a modern full-stack architecture:
   cd..
   cd facebook-dapp
   code .env.local
+  Edit the .env.local file and fill in the required API keys and configurations**
   ```
 - **Install backtend dependencies:**
   ```sh
   cd..
   cd web3
   code .env
+  Edit the .env file and fill in the required API keys and configurations
   ```
- - **Edit the .env.local & .env files and fill in the required API keys and configurations**
+- **Add ABI to context (Important)**
+  ```sh
+  from web3/artifacts/contracts/SocialMedia.sol
+  drag SocialMediaDapp.json
+  to facebook-dapp/context
+  ```
+- **Start the development servers:**
+  ```sh
+  cd..
+  cd facebook-dapp
+  npm run build
+  ```
+### Access the Application
+
+- Frontend: http://localhost:3000
+
+## 📚 Project Documentation
+
+- [Setup Guide]() - Detailed environment setup guide
+
+## 🤝 Contributing
+
+Contributions are welcome via Issues and Pull Requests!
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](DeSocial/LICENSE) file for details.
+
+---
+
+© 2025 DeSocial. All rights reserved.
