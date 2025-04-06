@@ -85,6 +85,7 @@ The project adopts a modern full-stack architecture:
 ## 📚 Project Documentation
 
 - [Setup Guide]() - Detailed environment setup guide
+- [Contract Address](https://edu-chain-testnet.blockscout.com/address/0xf9c82472546213c797264D7A84F5e1591A2484Eb?tab=txs) - 0xf9c82472546213c797264D7A84F5e1591A2484Eb
 
 ## 🤝 Contributing
 
