@@ -37,21 +37,31 @@ The project adopts a modern full-stack architecture:
 
 ### Local Development Setup
 
-1. Clone the repository:
-
-   bash
-   git clone https://github.com/bishal7448/SocialMediaDApp.git
-   
-
-2. Install frontend dependencies:
-
-   bash
-   cd facebook-dapp
-   npm install
-   
-
-3. Install backend dependencies:
-
-   bash
-   cd..
-   cd web3
+- **Clone the repository:**
+  ```sh
+  git clone https://github.com/bishal7448/SocialMediaDApp.git
+  ```
+- **Install frontend dependencies:**
+  ```sh
+  cd facebook-dapp
+  npm install
+  ```
+- **Install backtend dependencies:**
+  ```sh
+  cd..
+  cd web3
+  npm install
+  ```
+- **Set environment variables:**
+  ```sh
+  cd..
+  cd facebook-dapp
+  code .env.local
+  ```
+- **Install backtend dependencies:**
+  ```sh
+  cd..
+  cd web3
+  code .env
+  ```
+ - **Edit the .env.local & .env files and fill in the required API keys and configurations**
