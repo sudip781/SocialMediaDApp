@@ -4,7 +4,7 @@ import { AiOutlineHeart, AiOutlineShareAlt } from "react-icons/ai";
 import { FaRegComment } from "react-icons/fa";
 import { BsThreeDots } from "react-icons/bs";
 
-//INTERNAL IMPRT
+// INTERNAL IMPRT
 import { MainShareLink, MainSocialShare } from "./index";
 
 const MainMultiPost = () => {

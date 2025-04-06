@@ -7,7 +7,7 @@ import {
 import { HiPhotograph } from "react-icons/hi";
 import { BsThreeDots } from "react-icons/bs";
 
-//INTERNAL IMPRT
+// INTERNAL IMPRT
 import { MainShareLink } from "./index";
 
 const MainCreatePost = ({ setOpenCreatePost }) => {

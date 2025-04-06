@@ -1,3 +1,4 @@
+// IMPORTIMG NECESSARY FILES
 import React from "react";
 
 const HeaderMenu = ({ menu, index }) => {

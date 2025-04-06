@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-//INTERNAL IMPORTS
+// INTERNAL IMPORTS
 import {
   Header,
   Footer,
@@ -35,11 +35,11 @@ import {
 import { GroupChat } from "../components/Global/RightChat/index";
 import { CreatePost } from "../components/Global/MainBody/index";
 
-///INTERNAL IMPORTS
+// INTERNAL IMPORTS
 import { SOCAIL_MEDIA_Context } from "../context/context";
 
 const index = () => {
-  //CONTEXT DATA
+  // CONTEXT DATA
   const {
     INITAIL_CONTRACT,
     CREATE_ACCOUNT,
@@ -80,17 +80,17 @@ const index = () => {
     count,
   } = useContext(SOCAIL_MEDIA_Context);
 
-  //ROUTER
+  // ROUTER
   const router = useRouter();
   const [postType, setPostType] = useState();
   const [openSideChat, setOpenSideChat] = useState(false);
   const [openTheme, setOpenTheme] = useState(false);
-  const [backgroundTheme, setBackgroundTheme] = useState(false); //Menu-current-color
-  const [menuPostion, setMenuPostion] = useState(false); //Menu-active
-  const [theme, setTheme] = useState(false); //Theme-dark
-  const [navbarActive, setNavbarActive] = useState(false); //Nav-active
+  const [backgroundTheme, setBackgroundTheme] = useState(false); // Menu-current-color
+  const [menuPostion, setMenuPostion] = useState(false); // Menu-active
+  const [theme, setTheme] = useState(false); // Theme-dark
+  const [navbarActive, setNavbarActive] = useState(false); // Nav-active
 
-  //LOCAL STATE
+  // LOCAL STATE
   const [commentPostID, setCommentPostID] = useState();
   const [allPostComments, setAllPostComments] = useState([]);
 
@@ -216,7 +216,7 @@ const index = () => {
                 AppUsers={AppUsers}
                 LIKE_POST={LIKE_POST}
                 FOLLOW_USER={FOLLOW_USER}
-                LIKE_POST={LIKE_POST}
+                // LIKE_POST={LIKE_POST}
                 setOpenComment={setOpenComment}
                 setCommentPostID={setCommentPostID}
                 setAllPostComments={setAllPostComments}
@@ -321,7 +321,7 @@ const index = () => {
               sendAddress={sendAddress}
               openChatModel={openChatModel}
               setOpenChatModel={setOpenChatModel}
-              sendAddress={sendAddress}
+              // sendAddress={sendAddress}
               SEND_MESSAGE={SEND_MESSAGE}
               loader={loader}
               count={count}

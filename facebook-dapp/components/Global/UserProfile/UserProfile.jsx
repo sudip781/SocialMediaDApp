@@ -7,7 +7,7 @@ import {
   MainCreatePost,
 } from "../MainBody/index";
 import { UserBanner, UserInfo } from "./index";
-//INTERNAL IMPORT
+// INTERNAL IMPORT
 import { Members, Story, Shop } from "../../index";
 
 const UserProfile = ({

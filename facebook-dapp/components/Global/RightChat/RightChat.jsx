@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-//INTERNAL IMPORT
+// INTERNAL IMPORT
 import {
   RightChatContact,
   RightChatGroups,

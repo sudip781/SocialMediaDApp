@@ -6,7 +6,7 @@ import { BsThreeDots } from "react-icons/bs";
 import { MdOutlineContentCopy } from "react-icons/md";
 import toast from "react-hot-toast";
 
-//INTERNAL IMPRT
+// INTERNAL IMPRT
 import { MainShareLink, MainSocialShare } from "./index";
 import { shortenAddress } from "../../../utils/utils";
 
@@ -19,7 +19,7 @@ const MainVideoPost = ({
   setAllPostComments,
   DELETE_POST,
 }) => {
-  //NOTIFICATION
+  // NOTIFICATION
   const notifySuccess = (msg) => toast.success(msg, { duration: 2000 });
 
   const copyAddress = (address) => {

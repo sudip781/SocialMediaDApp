@@ -2,7 +2,7 @@ import React from "react";
 import { AiOutlineArrowRight, AiOutlinePlus } from "react-icons/ai";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 
-//INTERNAL IMPORT
+// INTERNAL IMPORT
 import { shortenAddress } from "../../../utils/utils";
 import Discord from "../../../Ads/discordAds.json";
 import Product from "../../../Ads/product.json";

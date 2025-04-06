@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import toast from "react-hot-toast";
 
-//INTERNAL IMPRT
+// INTERNAL IMPRT
 import { shortenAddress } from "../../../utils/utils";
 
-//COMPONENT
+// COMPONENT
 const InputComponent = ({
   first,
   second,
@@ -41,7 +41,7 @@ const InputComponent = ({
 );
 
 const YourText = ({ userAddress }) => {
-  //NOTIFICATION
+  // NOTIFICATION
   const notifySuccess = (msg) => toast.success(msg, { duration: 2000 });
   const notifyError = (msg) => toast.error(msg, { duration: 2000 });
 

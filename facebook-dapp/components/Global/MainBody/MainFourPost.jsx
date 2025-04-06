@@ -1,6 +1,6 @@
 import React from "react";
 
-//INTERNAL IMPRT
+// INTERNAL IMPRT
 import { MainShareLink, MainSocialShare } from "./index";
 
 const MainFourPost = () => {

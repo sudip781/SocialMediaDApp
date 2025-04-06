@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
-//INTERNAL IMPORT
+// INTERNAL IMPORT
 import { MainImagePost, MainVideoPost, MainTextPost } from "../MainBody/index";
 
 const SinglePost = ({
@@ -36,7 +36,7 @@ const SinglePost = ({
                   <MainImagePost
                     DELETE_POST={DELETE_POST}
                     userAddress={userAddress}
-                    post={post}
+                    // post={post}
                     LIKE_POST={LIKE_POST}
                     post={postDetails}
                     setAllPostComments={setAllPostComments}
@@ -48,7 +48,7 @@ const SinglePost = ({
                   <MainVideoPost
                     DELETE_POST={DELETE_POST}
                     userAddress={userAddress}
-                    post={post}
+                    // post={post}
                     LIKE_POST={LIKE_POST}
                     post={postDetails}
                     setAllPostComments={setAllPostComments}
@@ -62,7 +62,7 @@ const SinglePost = ({
                     userAddress={userAddress}
                     post={post}
                     LIKE_POST={LIKE_POST}
-                    post={postDetails}
+                    // post={postDetails}
                     setAllPostComments={setAllPostComments}
                     setCommentPostID={setCommentPostID}
                     setOpenComment={setOpenComment}

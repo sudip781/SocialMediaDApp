@@ -1,10 +1,11 @@
+// IMPORTIMG NECESSARY FILES
 import React, { useState, useEffect } from "react";
 import { ethers } from "ethers";
 import axios from "axios";
 import { useRouter } from "next/router";
 import toast from "react-hot-toast";
 
-///INTERNAL IMPORT
+// INTERNAL IMPORT
 import { getBalance, CALLING_CONTRACT, parseErrorMsg } from "../utils/utils";
 import {
   PINATA_API_KEY,
@@ -16,17 +17,17 @@ import {
 export const SOCAIL_MEDIA_Context = React.createContext();
 
 export const SOCAIL_MEDIA_Provider = ({ children }) => {
-  const SOCIAL_MEDIA_DAPP = "TBCoders";
+  const SOCIAL_MEDIA_DAPP = "DeSocial";
   const [loader, setLoader] = useState(false);
   const [openCreatePost, setOpenCreatePost] = useState(false);
   const [activeComponent, setActiveComponent] = useState("Newsfeed");
   const [openComment, setOpenComment] = useState(false);
 
-  //NOTIFICATION
+  // NOTIFICATION
   const notifySuccess = (msg) => toast.success(msg, { duration: 2000 });
   const notifyError = (msg) => toast.error(msg, { duration: 2000 });
 
-  //GLOBAL STATE VARIABLE
+  // GLOBAL STATE VARIABLE
   const [userAddress, setUserAddress] = useState("");
   const [userBalance, setUserBalance] = useState("");
   const [totalUser, setTotalUser] = useState();
@@ -36,28 +37,28 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
   const [userAccount, setUserAccount] = useState({});
   const [userFollowers, setUserFollowers] = useState([]);
   const [userFollowing, setUserFollowing] = useState([]);
-  //GROUP
+  // GROUP
   const [memberGroups, setMemberGroups] = useState([]);
-  //LOGIN STATUS
+  // LOGIN STATUS
   const [connected, setConnected] = useState("CREATE_ACCOUNT");
   const [count, setCount] = useState(0);
 
-  //NFT MARKETPLACE
+  // NFT MARKETPLACE
   const INITAIL_CONTRACT = async () => {
     try {
-      //GET USER ADDRESS
+      // GET USER ADDRESS
       const account = await checkIfWalletConnected();
 
       if (account) {
         setUserAddress(account.toLowerCase());
-        //GET USER BALANCE
+        // GET USER BALANCE
         const getBallance = await getBalance();
         setUserBalance(
           ethers.utils.formatUnits(getBallance.toString(), "ether")
         );
-        //GET CONTRACT
+        // GET CONTRACT
         const SOCIAL_CONTRACT = await CALLING_CONTRACT();
-        //GET ALL USER ADDRESS
+        // GET ALL USER ADDRESS
 
         const getAddresses = await SOCIAL_CONTRACT.getAddresses();
         for (let i = 0; i < getAddresses.length; i++) {
@@ -66,7 +67,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
           }
         }
 
-        //GET ALL USER
+        // GET ALL USER
         let filteredUsers = [];
         const getAllAppUser = await SOCIAL_CONTRACT.getAllAppUser();
 
@@ -84,7 +85,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
           }
         });
 
-        //GET USER FOLLOWING
+        // GET USER FOLLOWING
         const getFollowing = await SOCIAL_CONTRACT.getFollowing(account);
         const followering = await Promise.all(
           getFollowing.map(async (address) => {
@@ -102,7 +103,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
         );
         setUserFollowing(followering);
 
-        //FILTER METHOD
+        // FILTER METHOD
         const followingUserIds = new Set(
           followering.map((user) => user.owner.toLowerCase())
         );
@@ -113,7 +114,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
 
         setAppUsers(filteredUsersNew);
 
-        //GET APP POST
+        // GET APP POST
         const getAllPosts = await SOCIAL_CONTRACT.getAllPosts();
         const _parsedAllPosts = getAllPosts.map((post) => ({
           author: post.author,
@@ -127,11 +128,11 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
         }));
         setAllAppPost(_parsedAllPosts);
 
-        //GET TOTAL USER
+        // GET TOTAL USER
         const getUserCount = await SOCIAL_CONTRACT.getUserCount();
         setTotalUser(getUserCount.toNumber());
 
-        //GET USER POST
+        // GET USER POST
         const getPosts = await SOCIAL_CONTRACT.getPosts(account);
 
         const _parsedPost = getPosts.map((post) => ({
@@ -145,7 +146,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
           comments: post.comments,
         }));
         setAppUserPost(_parsedPost);
-        //GET USER DETAILS
+        // GET USER DETAILS
         const userDetails = await SOCIAL_CONTRACT.profiles(account);
         const _parsedData = {
           name: userDetails.name,
@@ -158,7 +159,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
         };
         setUserAccount(_parsedData);
 
-        //GET USER FOLLOWERS
+        // GET USER FOLLOWERS
         const getFollowers = await SOCIAL_CONTRACT.getFollowers(account);
         const followers = await Promise.all(
           getFollowers.map(async (address) => {
@@ -180,7 +181,6 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
       const errorMsg = parseErrorMsg(error);
 
       if (errorMsg == "ERROR: <Profile does not exist>") {
-        // notifyError("Create your account");
         console.log(errorMsg);
         setConnected("CREATE_ACCOUNT");
         console.log("Kindly create account");
@@ -188,7 +188,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
     }
   };
 
-  //READ MESSAGE
+  // READ MESSAGE
   const READ_MESSAGE = async (address) => {
     console.log(address);
     try {
@@ -209,7 +209,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
     }
   };
 
-  //CREATE ACCOUNT
+  // CREATE ACCOUNT
   const CREATE_ACCOUNT = async (formInput) => {
     try {
       const account = await checkIfWalletConnected();
@@ -236,7 +236,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
       console.log(errorMsg);
     }
   };
-  //CRETE POST
+  // CRETE POST
   const CREATE_POST = async (fileURL, type, description) => {
     try {
       setLoader(true);
@@ -265,7 +265,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
       return parseErrorMsg(error);
     }
   };
-  //LIKE POST
+  // LIKE POST
   const LIKE_POST = async (postID) => {
     try {
       setLoader(true);
@@ -285,7 +285,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
       console.log(error);
     }
   };
-  //LIKE POST
+  // LIKE POST
   const UNLIKE_POST = async (postID) => {
     try {
       setLoader(true);
@@ -304,7 +304,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
       console.log(error);
     }
   };
-  //ADD COMMENT TO POST
+  // ADD COMMENT TO POST
   const ADD_COMMENT_POST = async (_postID, _comment) => {
     try {
       setLoader(true);
@@ -328,7 +328,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
       console.log(error);
     }
   };
-  //FOLLOWER USER
+  // FOLLOWER USER
   const FOLLOW_USER = async (address) => {
     try {
       setLoader(true);
@@ -348,7 +348,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
       console.log(error);
     }
   };
-  //UNFOLLOWER USER
+  // UNFOLLOWER USER
   const UNFOLLOW_USER = async (address) => {
     try {
       setLoader(true);
@@ -369,7 +369,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
       console.log(error);
     }
   };
-  //SEND MESSAGE
+  // SEND MESSAGE
   const SEND_MESSAGE = async (recevier, message) => {
     try {
       setLoader(true);
@@ -391,7 +391,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
     }
   };
 
-  //DELETE POST
+  // DELETE POST
   const DELETE_POST = async (_postID) => {
     try {
       setLoader(true);
@@ -413,7 +413,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
     }
   };
 
-  //EDIT POST
+  // EDIT POST
   const EDIT_POST = async (postID, message) => {
     try {
       setLoader(true);
@@ -437,7 +437,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
     }
   };
 
-  //GET SINGLE POST
+  // GET SINGLE POST
   const GET_SINGLE_POST = async (_postID) => {
     try {
       const SOCIAL_CONTRACT = await CALLING_CONTRACT();
@@ -467,29 +467,16 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
     }
   };
 
-  //GROUP
-  //CREATE GROUP
+  // GROUP
+  // CREATE GROUP
   const CREATE_GROUP = async () => {
     try {
       setLoader(true);
       notifySuccess("Wait creating group...");
       const SOCIAL_CONTRACT = await CALLING_CONTRACT();
 
-      const GROUP_NAME_1 = "DEFI";
-      const GROUP_DES_1 =
-        "The Blockchain Coders brings together organizations from across web3 to create the largest community learning blockchain education. ‍ ";
-
-      // const GROUP_NAME_2 = "NFT";
-      // const GROUP_DES_2 =
-      //   "The Blockchain Coders brings together organizations from across web3 to create the largest community learning blockchain education. ";
-
-      // const GROUP_NAME_3 = "DEVELOPER";
-      // const GROUP_DES_3 =
-      //   "The Blockchain Coders brings together organizations from across web3 to create the largest community learning blockchain education. ";
-
-      // const GROUP_NAME_4 = "WEB3";
-      // const GROUP_DES_4 =
-      //   "The Blockchain Coders brings together organizations from across web3 to create the largest community learning blockchain education. ";
+      const GROUP_NAME_1 = "Creaters";
+      const GROUP_DES_1 = "This is a group for only creaters";
 
       const transaction = await SOCIAL_CONTRACT.createGroup(
         GROUP_NAME_1,
@@ -510,7 +497,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
     }
   };
 
-  //JOIN GROUP
+  // JOIN GROUP
   const JOIN_GROUP = async (_groupID) => {
     try {
       setLoader(true);
@@ -540,7 +527,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
     }
   };
 
-  //SEND GROUP MESSAGE
+  // SEND GROUP MESSAGE
   const SEND_GROUP_MESSAGE = async (_groupID, message) => {
     try {
       setLoader(true);
@@ -563,7 +550,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
     }
   };
 
-  //GET ALL GROUP
+  // GET ALL GROUP
   const GET_ALL_GROUPS = async (_groupID) => {
     try {
       const SOCIAL_CONTRACT = await CALLING_CONTRACT();
@@ -589,7 +576,7 @@ export const SOCAIL_MEDIA_Provider = ({ children }) => {
     }
   };
 
-  //GET GROUP MESSAGE
+  // GET GROUP MESSAGE
   const GET_GROUP_MESSAGE = async (_groupID) => {
     try {
       const SOCIAL_CONTRACT = await CALLING_CONTRACT();

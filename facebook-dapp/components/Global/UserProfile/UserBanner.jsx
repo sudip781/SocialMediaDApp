@@ -2,11 +2,11 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsThreeDots } from "react-icons/bs";
 
-//INTERNAL IMPORT
+// INTERNAL IMPORT
 import { shortenAddress } from "../../../utils/utils";
 
 const UserBanner = ({ userAccount }) => {
-  const recipient = "theblockchaincoders@gmail.com";
+  const recipient = "saha.bishal7676@gmail.com";
   const subject = "Heartfelt Thanks for Your Outstanding Work on Social Media";
   const body =
     "Dear [Recipient's Name],\nI hope this message finds you well. I wanted to take a moment to extend my sincere appreciation for your exceptional efforts and dedication throughout the entire duration of Social media web3.\nYour hard work, creativity, and attention to detail have not gone unnoticed. The project's success is a testament to your unwavering commitment and the high standards you consistently uphold. Your ability to collaborate and contribute valuable insights has truly set a benchmark for excellence.\n I am genuinely grateful for the countless hours you invested, the challenges you navigated with grace, and the positive energy you brought to the team. Your contributions have not only met but exceeded our expectations, and it is clear that your passion for your work shines through.\n This projects success is, in no small part, a reflection of your dedication and expertise. Your positive attitude and willingness to go above and beyond have made a significant impact, and I am confident that your efforts will continued to inspire those around you.\nOnce again, thank you for your outstanding work on Social media web3. Your professionalism, skill, and enthusiasm have been instrumental in achieving our goals, and we look forward to future collaborations with the same level of enthusiasm and success.\nWishing you continued success in all your endeavors.\n Warm regards";

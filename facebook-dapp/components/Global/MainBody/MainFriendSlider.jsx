@@ -1,6 +1,6 @@
 import React from "react";
 
-//INTERNAL IMPORT
+// INTERNAL IMPORT
 import { shortenAddress } from "../../../utils/utils";
 
 const MainFriendSlider = ({ AppUsers }) => {

@@ -25,7 +25,7 @@ const DiscordAds = () => {
           </div>
           <div class="card-body dd-block pt-0 ps-4 pe-4 pb-4">
             <ul class="memberlist mt-1 mb-2 ms-0 d-block">
-              {[1, 2, 3, 4, 5].map((user, index) => (
+              {[1, 2, 6, 7, 8, 9].map((user, index) => (
                 <li class="w20">
                   <a href="#">
                     <img
@@ -44,7 +44,7 @@ const DiscordAds = () => {
                   class="bg-greylight fw-600 text-grey-500 font-xssss w35 ls-3 text-center"
                   style={{ height: "35px", lineHeight: "35px" }}
                 >
-                  +2
+                  +6
                 </a>
               </li>
               <li class="ps-3 w-auto ms-1">

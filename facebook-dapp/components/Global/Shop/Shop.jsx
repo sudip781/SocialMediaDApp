@@ -1,6 +1,6 @@
 import React from "react";
 
-//INTERNAL IMPORT
+// INTERNAL IMPORT
 import Tokens from "../../../Ads/tokenAds.json";
 
 const Shop = () => {

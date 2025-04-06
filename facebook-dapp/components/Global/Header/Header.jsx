@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BiHomeAlt, BiSolidVideo, BiUser, BiShoppingBag } from "react-icons/bi";
 
-//INTERNAL IMPORT
+// INTERNAL IMPORT
 import {
   HeaderAvatar,
   HeaderMenu,

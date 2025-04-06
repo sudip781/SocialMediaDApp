@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { MdOutlineAttachment } from "react-icons/md";
 import { AiOutlineStar } from "react-icons/ai";
 
-//INTERNAL IMPORT
+// INTERNAL IMPORT
 import { shortenAddress } from "../../../utils/utils";
 
 const Message = ({

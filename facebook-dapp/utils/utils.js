@@ -3,7 +3,7 @@ import Web3Moal from "web3modal";
 
 import { CONTRACT_ABI, CONTRACT_ADDRESS } from "../context/constants";
 
-//GET USER BALANCE
+// GET USER BALANCE
 export const getBalance = async () => {
   try {
     const web3modal = new Web3Moal();
@@ -17,11 +17,11 @@ export const getBalance = async () => {
   }
 };
 
-//FETCH CONTRACT
+// FETCH CONTRACT
 const FETCH_CONTRACT = (PROVIDER) =>
   new ethers.Contract(CONTRACT_ADDRESS, CONTRACT_ABI, PROVIDER);
 
-//CONNECTING WITH CONTRACT
+// CONNECTING WITH CONTRACT
 export const CALLING_CONTRACT = async (CONTRACT_ADDRESS, CONTRACT_ABI) => {
   try {
     const web3modal = new Web3Moal();

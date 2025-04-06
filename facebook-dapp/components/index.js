@@ -10,7 +10,7 @@ import MainBody from "./Global/MainBody/MainBody";
 import GlobalCommentModal from "./Global/GlobalCommentModal";
 import Loader from "./Global/Loader";
 
-//REGISTER
+// REGISTER
 import Register from "./Global/Register/Register";
 import AccountComponent from "./Global/Account/AccountComponent";
 import User from "./Global/User/User";
@@ -22,17 +22,17 @@ import YourMedia from "./Global/Account/YourMedia";
 import YourVideo from "./Global/Account/YourVideo";
 import YourText from "./Global/Account/YourText";
 
-//USER PROFILE
+// USER PROFILE
 import UserProfile from "./Global/UserProfile/UserProfile";
 
-//MEMBERS
+// MEMBERS
 import Members from "./Global/Members/Members";
 
-//STORY
+// STORY
 import Story from "./Global/Story/Story";
-//SHOP
+// SHOP
 import Shop from "./Global/Shop/Shop";
-//SinglePost
+// SinglePost
 import SinglePost from "./Global/SinglePost/SinglePost";
 import EditPost from "./Global/SinglePost/PostEdit";
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { BsFillSendFill } from "react-icons/bs";
 
-//INTERNAL IMPRT
+// INTERNAL IMPRT
 import { MainShareLink, Upload } from "../index";
 
 const GlobalComment = ({

@@ -21,7 +21,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { BsFillCloudUploadFill } from "react-icons/bs";
 import { AiOutlineUserAdd } from "react-icons/ai";
 
-//INTERNAL IMPRT
+// INTERNAL IMPRT
 import { MainShareLink, Upload, BtnLoader } from "./index";
 import { SOCAIL_MEDIA_Context } from "../../../context/context";
 
@@ -41,11 +41,11 @@ const postType = [
 ];
 
 const CreatePost = ({ setOpenCreatePost, CREATE_POST }) => {
-  //CONTEXT DATA
+  // CONTEXT DATA
   const { PINATA_API_KEY, PINATA_SECRECT_KEY, setLoader, loader } =
     useContext(SOCAIL_MEDIA_Context);
 
-  //NOTIFICATION
+  // NOTIFICATION
   const notifySuccess = (msg) => toast.success(msg, { duration: 2000 });
   const notifyError = (msg) => toast.error(msg, { duration: 2000 });
 

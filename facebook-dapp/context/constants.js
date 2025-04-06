@@ -1,3 +1,4 @@
+// IMPORTIMG NECESSARY FILES
 import { ethers } from "ethers";
 import Web3Modal from "web3modal";
 import axios from "axios";
@@ -7,14 +8,14 @@ import socialMediaDapp from "./SocialMediaDapp.json";
 export const CONTRACT_ABI = socialMediaDapp.abi;
 export const CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_FACEBOOK_CONTRACT;
 
-//PINATA KEYS
+// PINATA KEY
 export const PINATA_API_KEY = process.env.NEXT_PUBLIC_PINATA_API_KEY;
 export const PINATA_SECRECT_KEY = process.env.NEXT_PUBLIC_PINATA_SECRECT_KEY;
 
-//NETWORK
+// NETWORK
 const NETWORK = process.env.NEXT_PUBLIC_NETWORK;
 
-//NETWORK
+// NETWORKS
 const networks = {
   holesky: {
     chainId: `0x${Number(17000).toString(16)}`,
@@ -24,7 +25,7 @@ const networks = {
       symbol: "ETH",
       decimals: 18,
     },
-    rpcUrls: ["https://rpc.ankr.com/eth_holesky"],
+    rpcUrls: ["https://holesky.infura.io/v3/637bba92f0ee42f48ac611a0e62708d5"],
     blockExplorerUrls: ["https://holesky.etherscan.io/"],
   },
   polygon_amoy: {

@@ -1,6 +1,6 @@
 import React from "react";
 
-//INTERNAL IMPORT
+// INTERNAL IMPORT
 import { shortenAddress } from "../../../utils/utils";
 
 const MainFiendSliderTwo = ({ AppUsers, FOLLOW_USER }) => {
@@ -39,15 +39,15 @@ const MainFiendSliderTwo = ({ AppUsers, FOLLOW_USER }) => {
             <div class="card-body d-block w-100 ps-3 pe-3 pb-4 text-center">
               <figure class="avatar ms-auto me-auto mb-0 position-relative w65 z-index-1">
                 <img
-                  src="images/user-8.png"
+                  src="images/female-profile.png"
                   alt="image"
                   class="float-right p-0 bg-white rounded-circle w-100 shadow-xss"
                 />
               </figure>
               <div class="clearfix"></div>
-              <h4 class="fw-700 font-xssss mt-3 mb-1">Studio Express</h4>
+              <h4 class="fw-700 font-xssss mt-3 mb-1">Bishal Saha</h4>
               <p class="fw-500 font-xsssss text-grey-500 mt-0 mb-3">
-                @crazy_jay789
+                @bishal7448
               </p>
               <a
                 href="#"

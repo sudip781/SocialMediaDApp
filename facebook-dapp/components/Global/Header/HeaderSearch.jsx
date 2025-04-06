@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BsSearch } from "react-icons/bs";
 
 const HeaderSearch = ({ onHandleSearch, onClearSearch }) => {
-  //FILTER
+  // FILTER
   const [search, setSearch] = useState("");
   const [searchItem, setSearchItem] = useState(search);
 
@@ -21,7 +21,10 @@ const HeaderSearch = ({ onHandleSearch, onClearSearch }) => {
   return (
     <form action="#" class="float-left header-search">
       <div class="form-group mb-0 icon-input">
-        <i class=" font-sm text-grey-400">
+        {/* <i class=" font-sm text-grey-400">
+          <BsSearch />
+        </i> */}
+        <i className="text-grey-400 text-sm flex items-center">
           <BsSearch />
         </i>
         <input

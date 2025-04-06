@@ -1,6 +1,6 @@
 import React from "react";
 
-//INTERNAL IMPORT
+// INTERNAL IMPORT
 import { MainImagePost } from "../MainBody/index";
 
 const YourMedia = ({

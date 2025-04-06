@@ -2,17 +2,17 @@ import React, { useState, useEffect } from "react";
 import { BsSearch } from "react-icons/bs";
 import { BiSolidFilterAlt } from "react-icons/bi";
 
-//INTERNAL IMPORT
+// INTERNAL IMPORT
 import { shortenAddress } from "../../../utils/utils";
 
 const Members = ({ AppUsers, FOLLOW_USER }) => {
-  //NEW LOCAL STATE
+  // NEW LOCAL STATE
   const [allUser, setAllUser] = useState(AppUsers);
   const [allUserCopy, setAllUserCopy] = useState(AppUsers);
 
   console.log(AppUsers);
 
-  //FILTER
+  // FILTER
   const [search, setSearch] = useState("");
   const [searchItem, setSearchItem] = useState(search);
 
@@ -29,7 +29,7 @@ const Members = ({ AppUsers, FOLLOW_USER }) => {
     }
   }, [search]);
 
-  //FILTER ALL POST
+  // FILTER ALL POST
   const onHandleSearch = (value) => {
     const filteredUsers = AppUsers.filter(({ name }) =>
       name.toLowerCase().includes(value.toLowerCase())

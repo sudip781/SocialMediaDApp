@@ -1,7 +1,7 @@
 import toast, { Toaster } from "react-hot-toast";
 import Head from "next/head";
-
-//INTERNAL IMPORTS
+ 
+// INTERNAL IMPORTS
 import "../styles/globals.css";
 import { SOCAIL_MEDIA_Provider } from "../context/context";
 
