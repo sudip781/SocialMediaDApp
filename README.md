@@ -93,7 +93,7 @@ Contributions are welcome via Issues and Pull Requests!
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](DeSocial/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](DeSocial/Doc/LICENSE) file for details.
 
 ---
 
